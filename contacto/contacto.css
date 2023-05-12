@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #091016;
+}
+.menu{
+    margin-left: -100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-direction: column;
+    z-index: 5;
+    position: absolute;
+    background-color: #091016d0;    
+    backdrop-filter: blur(10px);
+}
+.menu a{
+    text-decoration: none;
+}
+.menu span{
+    color: white;
+    z-index: 5;
+    font-size: 2rem;
+    position: absolute;
+    top: 4px;
+    right: 3rem;
+}
+header#header{
+    background-color: #0910169a;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 4rem;
+}
+
+header#header img#logoCbr{
+    width: 6rem;
+    height: 2.5rem;
+    filter: invert();
+}
+
+header#header nav a{
+    text-decoration: none;
+}
+header#header nav a img{
+    width: 1.5rem;
+}
+
+header#header nav a:hover{
+   transform: scale(1.1);
+}
+
+header#header nav a:visited{
+    color: #5DCAD1;
+}
+main h1{
+color: white;
+margin-top: 5rem;
+}
+form{
+margin-top: 2rem;
+}
+form div{
+width: 25rem;
+}
+form #floatingTextarea{
+    min-height: 10rem;
+max-height: 10rem;
+}
+form button{
+    margin-top: 2rem;
+width: 15rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+ }
+ footer hr{
+     background: rgba(255, 255, 255, 0.582);
+     height: 0.1rem;
+ }   
+ footer small{
+     margin-left: 6rem;
+     color: rgba(255, 255, 255, 0.466);
+ }
+ 
+ @media(max-width:678px){
+     body{
+         height: auto;
+     }
+     header#header{
+         padding: 0;
+     }
+     header#header img{
+        margin: 0;
+     }
+     header#header nav{
+         display: none;
+     }
+     main #article{
+         text-align: center;
+         justify-content: center;
+     }
+     form div{
+        width: 90%;
+    }
+     
+ }
