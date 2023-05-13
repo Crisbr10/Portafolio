@@ -121,6 +121,9 @@ footer small{
     header#header nav{
         display: none;
     }
+    main{
+        margin-top: 4.6rem;
+     }
     main #article{
         text-align: center;
         justify-content: center;
